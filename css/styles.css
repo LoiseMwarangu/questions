@@ -60,3 +60,6 @@ button {
 button:hover{
   background-color: #teal;
     }
+h2{
+  font-weight: bold;
+}
