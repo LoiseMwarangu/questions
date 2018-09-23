@@ -1,8 +1,31 @@
 
 html {
-  background-image: url("https://vueschool.io/articles/wp-content/uploads/2017/12/why-js.png");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkJI1rKxUSV660uYB_TeaAUJe2YVBkOxldC5aJvcUu-fL-ixwU");
+}
+h1{
+  color:teal;
 }
 body{
-  text-align: center;
-   color: pink;
+  background-color: #009999;
+  float:inherit;
+  padding: pink 10px;
+  margin: 40px;
+  border: 10px;
+}
+.radio{
+  background-color:white;
+  color: teal;
+  font-weight: bold;
+  display:block;
+  margin-left  : -28px;
+  padding-left : 28px;
+  line-height  : 40px;
+  font-size: 20px;
+  width:400px;
+}
+li{
+  font-size: 20px;
+  font-weight: bold;
+  font-style: oblique;
+  color: white;
 }

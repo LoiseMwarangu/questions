@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <script type="js/scripts.js">
-    <scripT src ="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
     <title>JavaScript Trivia</title>
   </head>
   <body>
-    <div class="jumbotron">
+    <div class="container">
+     <div class="jumbotron">
       <h1>JavaScript Trivia</h1>
-      please answer the following questions
-    </div>
+      please answer the following questions.<em>Each question is 20 points</em>
+     </div>
     <ol>
-      <li> is JavaScript an Object based Programming language?</li>
+    <form>
+     <li> is JavaScript an Object based Programming language?</li>
         <div class="radio">
           <label>
-            <input type="radio" name="object" value="yes" checked>
+            <input type="radio" name="object" value="yes" id="button1">
             yes
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="object" value="no" checked>
+            <input type="radio" name="object" value="no" id="button2">
             No
           </label>
         </div>
@@ -91,23 +93,27 @@
           <input type="radio" name="code" value="no" checked>
         No
         </label>
+      </div>
       correct answer:yes
-    <li>Which company developed JavaScript?</li>
-    <div class="radio">
+     <li>Which company developed JavaScript?</li>
+      <div class="radio">
       <label>
           <input type="radio" name="company" value="netscapeCommunications" checked>
         Netscape communications
       </label>
-    <div class="radio">
+     </div>
+     <div class="radio">
         <label>
             <input type="radio" name="company" value="javascriptCommunications" checked>
           JavaScript communications
-     </label>
+       </label>
+     </div>
      <div class="radio">
        <label>
           <input type="radio" name="company" value="allTheAbove" checked>
          all the above
        </label>
+       </div>
        correct ans:netscape comm
       <li>Which symbol is used for comments in Javascript?</li>
       <div class="radio">
@@ -115,20 +121,22 @@
          <input type="radio" name="comments" value="//" checked>
          //
        </label>
+       </div>
        <label>
           <input type="radio" name="comments" value="/*" checked>
           /*
        </label>
+       </div>
       <label>
           <input type="radio" name="comments" value="*/" checked>
          */
       </label>
-    <label>
-      <input type="radio" name="comments" value="allOfTheAbove" checked>
-    All of the above
-    </label>
+      <label>
+        <input type="radio" name="comments" value="allOfTheAbove" checked>
+        All of the above
+      </label>
     <li>Does JavaScript support automatic type conversion?</li>
-    <div class="radio">
+      <div class="radio">
       <label>
         <input type="radio" name="automatic" value="yes" checked>
          Yes
@@ -138,7 +146,9 @@
         No
     </label>
     </div>
-</ol>
+  </ol>
     <button type="submit" class="btn">Show me my score!</button>
+    </form>
+  </div>
   </body>
 </html>
