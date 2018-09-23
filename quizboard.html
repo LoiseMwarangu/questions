@@ -10,12 +10,12 @@
   <body>
     <div class="container">
      <div class="jumbotron">
-      <h1>JavaScript Trivia</h1>
-      please answer the following questions.<em>Each question is 20 points</em>
+      <h1>General JavaScript Trivia</h1>
+      <p>A fan quiz on <strong>the best programming language</strong>. Questions cover the history,features,syntax and use of JavaScript .</p>
      </div>
     <ol>
     <form>
-     <li> is JavaScript an Object based Programming language?</li>
+     <li> Is JavaScript an Object based Programming language?</li>
         <div class="radio">
           <label>
             <input type="radio" name="object" value="yes" id="button1">
@@ -28,55 +28,53 @@
             No
           </label>
         </div>
-        correct ans :yes
       <li>What one is not a JavaScript Data Type?</li>
       <div class="radio">
         <label>
-          <input type="radio" name="data" value="number" checked>
+          <input type="radio" name="data" value="number" id=button>
           Number
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="data" value="string" checked>
+          <input type="radio" name="data" value="string" id=button>
           String
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="data" value="boolean" checked>
+          <input type="radio" name="data" value="boolean" id=button>
           BooLean
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="data" value="function" checked>
+          <input type="radio" name="data" value="function" id=button>
           Function
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="data" value="undefined" checked>
+          <input type="radio" name="data" value="undefined" id=button>
           Undefined
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="data" value="noneOfTheAbove" checked>
+          <input type="radio" name="data" value="noneOfTheAbove" id=button>
           None of the Above
         </label>
       </div>
-      correct answer : none of the above
       <li>Negative Infinity is a number in JavaScript which can be derived by dividing negative number by zero.</li>
       <div class="radio">
        <label>
-         <input type="radio" name="infinity" value="true" checked>
+         <input type="radio" name="infinity" value="true" id=button>
          True
       </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="infinity" value="False" checked>
+          <input type="radio" name="infinity" value="False" id=button>
           False
         </label>
       </div>
@@ -84,70 +82,75 @@
       <li>Is it possible to break JavaScript Code into several lines?</li>
       <div class="radio">
         <label>
-          <input type="radio" name="code" value="yes" checked>
+          <input type="radio" name="code" value="yes" id=button>
         yes
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="code" value="no" checked>
+          <input type="radio" name="code" value="no" id=button>
         No
         </label>
       </div>
-      correct answer:yes
      <li>Which company developed JavaScript?</li>
       <div class="radio">
       <label>
-          <input type="radio" name="company" value="netscapeCommunications" checked>
+          <input type="radio" name="company" value="netscapeCommunications" id=button>
         Netscape communications
       </label>
      </div>
      <div class="radio">
         <label>
-            <input type="radio" name="company" value="javascriptCommunications" checked>
+            <input type="radio" name="company" value="javascriptCommunications" id=button>
           JavaScript communications
        </label>
      </div>
      <div class="radio">
        <label>
-          <input type="radio" name="company" value="allTheAbove" checked>
+          <input type="radio" name="company" value="allTheAbove" id=button>
          all the above
        </label>
        </div>
-       correct ans:netscape comm
       <li>Which symbol is used for comments in Javascript?</li>
       <div class="radio">
        <label>
-         <input type="radio" name="comments" value="//" checked>
+         <input type="radio" name="comments" value="//" id=button>
          //
        </label>
        </div>
-       <label>
-          <input type="radio" name="comments" value="/*" checked>
+       <div class="radio">
+         <label>
+           <input type="radio" name="comments" value="/*" id=button>
           /*
-       </label>
+         </label>
        </div>
-      <label>
-          <input type="radio" name="comments" value="*/" checked>
+       <div class="radio">
+         <label>
+          <input type="radio" name="comments" value="*/" id=button>
          */
-      </label>
-      <label>
-        <input type="radio" name="comments" value="allOfTheAbove" checked>
+         </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="comments" value="allOfTheAbove" id=button>
         All of the above
-      </label>
+        </label>
+      </div>
     <li>Does JavaScript support automatic type conversion?</li>
       <div class="radio">
-      <label>
-        <input type="radio" name="automatic" value="yes" checked>
+        <label>
+          <input type="radio" name="automatic" value="yes" id=button>
          Yes
-   </label>
-   <label>
-        <input type="radio" name="automatic" value="no" checked>
+       </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="automatic" value="no" id=button>
         No
-    </label>
-    </div>
+        </label>
+      </div>
   </ol>
-    <button type="submit" class="btn">Show me my score!</button>
+      <button type="submit" class="btn">Show me my score!</button>
     </form>
   </div>
   </body>

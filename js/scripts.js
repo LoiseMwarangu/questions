@@ -1,5 +1,5 @@
  $(document).ready(function() {
-  $("object").submit(function(event) {
+  $(".radio").submit(function(event) {
   event.preventDefault();
    var button1 = document.getElementById("button1");
    var button2 = document.getElementById("button2");

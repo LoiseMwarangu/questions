@@ -8,12 +8,14 @@ h1{
 body{
   background-color: #009999;
   float:inherit;
-  padding: pink 10px;
-  margin: 40px;
-  border: 10px;
+  padding: 50px;
+  margin: 70px;
+  border: 5px solid #e6e6e6;
+  color: teal;
 }
+
 .radio{
-  background-color:white;
+  background-color:#e6e6e6;
   color: teal;
   font-weight: bold;
   display:block;
@@ -23,9 +25,29 @@ body{
   font-size: 20px;
   width:400px;
 }
+P{
+  font-size: 20px;
+  font-weight: bold;
+  font-style:bold;
+  color:  #009999;
+  font-family: cursive;
+}
 li{
   font-size: 20px;
   font-weight: bold;
   font-style: oblique;
-  color: white;
+  color: #e6e6e6;
 }
+button {
+    background-color:#e6e6e6;
+    border:2px solid  #009999; /* Teal */ ;
+    color: teal;
+    padding: 15px 32px;
+    float: right;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 16px;
+  }
+button:hover{
+  background-color: #teal;
+    }
