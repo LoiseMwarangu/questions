@@ -7,7 +7,7 @@ return(object+data+infinity+code+company+comments+automatic);
 
 $(document).ready(function(){
   $("#answers").click(function(event){
-    event.PreventDefault()
+    event.preventDefault()
     var object   = parseInt($("input:radio[name=object]:checked").val());
     var data     = parseInt($("input:radio[name=data]:checked").val());
     var infinity = parseInt($("input:radio[name=infinity]:checked").val());
@@ -17,15 +17,27 @@ $(document).ready(function(){
     var automatic=parseInt ($("input:radio[name=automatic]:checked").val());
     var totalScore=result(object,data,infinity,code,company,comments,automatic);
 
-    total.innerHTML=("good job" +totalScore)
-    console.log(totalScore)
+    // total.innerHTML=("good job! " +totalScore)
 
-    // if (totalScore >70){
-    //   total.innerHTML=("your total score is:" +totalScore)
-    // }
-    // else {
-    //   total.innerHTML=("your total score is zero")
-    // }
+
+    if (totalScore >=50){
+      $("#form1").hide();
+      total.innerHTML=("Excellent! Your total score is: " +totalScore)
+    }
+    else if(totalScore>=40 && totalScore<50){
+      $("#form1").hide();
+      total.innerHTML=("Good job! Your total score is: " +totalScore)
+    }
+    else if (totalScore>0 && totalScore<40) {
+      $("#form1").hide();
+    total.innerHTML=("Try harder next time, your total score is: " +totalScore )
+    }
+
+    else {
+      $("#form1").hide();
+      $("#total").show();
+      total.innerHTML=("Review the test" )
+    }
 
     })
 })

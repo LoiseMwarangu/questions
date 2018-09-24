@@ -6,12 +6,13 @@ h1{
   color:teal;
 }
 body{
+  color: teal;
   background-color: #009999;
   float:inherit;
   padding: 50px;
   margin: 70px;
   border: 5px solid #e6e6e6;
-  color: teal;
+
 }
 
 label{
@@ -24,6 +25,14 @@ label{
   line-height  : 40px;
   font-size: 20px;
   width:400px;
+}
+#total{
+  color: #e6e6e6;
+  background-color: #009999;
+  float:inherit;
+  padding: 50px;
+  margin: 70px;
+  border: 5px solid #e6e6e6;
 }
 .fact{
   float:right;
